@@ -6,9 +6,27 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class citiesTVC: UITableViewController {
 
+    @IBOutlet weak var cityTableView: UITableView!
+    
+    var cityName = ""
+    
+    struct Cities {
+        var cityName = ""
+        var cityTemp = 0.0
+        
+    }
+    
+    var cityTempArray: [Cities] = []
+    
+    func currentWeather(city: String) {
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
